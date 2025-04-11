@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Surccusale{% endblock %}
+
+{% block body %}
+    <h1>Surccusale</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ surccusale.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ surccusale.nom }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ surccusale.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Contact</th>
+                <td>{{ surccusale.contact }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_surccusale_index') }}">back to list</a>
+
+    <a href="{{ path('app_surccusale_edit', {'id': surccusale.id}) }}">edit</a>
+
+    {{ include('surccusale/_delete_form.html.twig') }}
+{% endblock %}

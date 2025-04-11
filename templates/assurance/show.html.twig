@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Assurance{% endblock %}
+
+{% block body %}
+    <h1>Assurance</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ assurance.id }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ assurance.type }}</td>
+            </tr>
+            <tr>
+                <th>Datesouscription</th>
+                <td>{{ assurance.datesouscription ? assurance.datesouscription|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DateExpiration</th>
+                <td>{{ assurance.dateExpiration ? assurance.dateExpiration|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ assurance.createdAt ? assurance.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_assurance_index') }}">back to list</a>
+
+    <a href="{{ path('app_assurance_edit', {'id': assurance.id}) }}">edit</a>
+
+    {{ include('assurance/_delete_form.html.twig') }}
+{% endblock %}
