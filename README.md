@@ -28,7 +28,7 @@ Application web de Gestion des clients et leurs assurances – chez INTIA  ASSUR
      ```   
 4. Modifiez la ligne de connexion MYSQL en fonction de votre configuration locale
     ```bash
-      DATABASE_URL="mysql://app:!ChangeMe!@127.0.0.1:3306/app »
+      DATABASE_URL="mysql://app:!ChangeMe!@127.0.0.1:3306/app"
     ```      
 5. Créez la base de données
    ```bash
