@@ -1,5 +1,5 @@
 
-# Déploiement de IntiaAssrance
+# Partie 4 : Déploiement de IntiaAssrance
 
 Application web de Gestion des clients et leurs assurances – chez INTIA  ASSURANCE
 
